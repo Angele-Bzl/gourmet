@@ -6,4 +6,4 @@ L'identité devait être chic
 
 Le site devait être responsive
 
-Des effets de style devait s'appliquer au passage du curseur
+Des effets de style devaient s'appliquer au passage du curseur
