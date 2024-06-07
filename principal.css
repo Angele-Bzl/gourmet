@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+  }
+  
+p{
+    font-family: carlito, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+}
+
+h2 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    margin: 30px;
+  }
+
+  /*NAVIGATION ET FOOTER------------*/
+  h1{
+    font-family: "Great Vibes", cursive;
+    font-size: 1.5em;
+    color: beige;
+    margin: 20px;
+  }
+
+  header{
+    background-color: #353333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer{
+    background-color: #353333;
+    padding : 40px 0px 100px 0px;
+  }
+
+footer ul{
+   justify-content: center;
+   padding-inline-start: 0;
+  }
+
+  footer p{
+    color: beige;
+  }
+
+  nav{
+    margin:0 20px 0 0;
+  }
+
+  .navtel{/*le bouton hamburger n'est pas fonctionnel car je ne maîtrise pas encore le JS*/
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    color: beige;
+    opacity: 0%;
+  }
+
+  a{
+    text-decoration: none;
+    color: beige;
+    font-family: carlito, sans-serif;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  ul{
+    display: flex;
+  }
+
+  li{
+    list-style-type: none;
+    margin : 5px;
+  }
+
+  /*GALERIE------------*/
+  #galerie{
+    display: flex;
+    justify-content: space-between;
+  }
+  #galerie img{
+    width: 33%;
+    transition: 1s;
+  }
+
+  #galerie img:hover{
+    filter: grayscale(50%);
+  }
+
+  #about p{
+    margin: 1em;
+  }
+
+  /*MENU-------------------------*/
+  h3{
+    text-align: center;
+    font-family: tangerine, serif;
+    font-size: 2.5em;
+  }
+
+  .plat{
+    display: flex;
+    justify-content: center;
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width : 50%;
+    height: 400px;
+    padding: 40px;
+  }
+
+  .carre{
+    width : 50%;
+    height: 130%;
+    background-color: beige;
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .detail{
+    width : 100%;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0%;
+    transition: 1s;
+  }
+
+  .detail:hover{
+    opacity: 100%;
+  }
+
+
+  body:has(.plat11:hover) #plat1{
+    filter: grayscale(50%);
+  }
+
+  body:has(.plat22:hover) #plat2{
+    filter: grayscale(50%);
+  }
+
+  #plat1{
+    background-image: url(images/saint-jacques-3.jpg);
+    transition: 1s;
+  }
+
+  #plat2{
+    background-image: url(images/pexels-pixabay-262978.jpg);
+    background-size: 60rem;
+    transition: 1s;
+  }
+
+  div p{
+    margin : 15px;
+  }
+
+  /*TESTIMONIALS----------------*/
+
+#testimonials{
+  display: flex;
+  width: 97vw;
+  overflow: auto;
+  box-shadow: inset -5em 1em 5em 0.5em beige;
+}
+
+blockquote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: carlito, sans-serif;
+  border : double;
+  border-color : #353333 ;
+  padding: 20px;
+  margin: 20px;
+  min-width: 80vw;
+  height: 6em;
+  }
+
+  em{
+    text-align: center;
+  }
+
+  /*MEDIA----------------*/
+
+  @media screen and (max-width: 1074px){
+    h1{
+      font-size: 1em;
+    }
+    .plat{
+      display: flex;
+      flex-direction : column;
+    }
+    article{
+      width: 100%;
+      padding: 40px 0;
+    }
+    #plat2{
+      background-image: url(images/pexels-pixabay-262978.jpg);
+      background-size: 90rem;
+    }
+    .carre{
+      width : 70%;
+      height: 130%;
+      background-color: beige;
+      opacity: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 500px){ 
+    nav{
+      display: none;
+    }
+    .navtel{
+      opacity: 100%;;
+    }
+  }
